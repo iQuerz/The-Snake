@@ -144,7 +144,7 @@ namespace The_Snake
             if (speed > 40)
                 speed *= (float)0.9;
             else
-                speed *= (float)0.98;
+                speed -= (float)0.5;
         }
         private bool touches(Point p, Point q)
         {

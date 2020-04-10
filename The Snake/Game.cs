@@ -12,6 +12,7 @@ namespace The_Snake
 {
     public partial class Game : Form
     {
+        public static int playerscore;
         public Game()
         {
             InitializeComponent();
@@ -56,12 +57,18 @@ namespace The_Snake
             if (i == snake.multiplier-1)
             {
                 if (snake.CheckDieded())
+                {
+                    playerscore = snake.Score;
+                    Scoreboard scores = new Scoreboard();
+                    scores.Show();
                     this.Dispose();
+                }
                 if (snake.CheckFruitHit())
                 {
                     snake.Score += Convert.ToInt32((2000 - br) / snake.speed);
                     br = 0;
                     snake.NewFruit();
+                    snake.Add();
                     snake.Add();
                     snake.SpeedUp();
                     timer1.Interval = (int)snake.speed / snake.multiplier;

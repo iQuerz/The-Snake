@@ -18,3 +18,4 @@ D:\Programming-Projects\The Snake\The Snake\obj\Debug\The_Snake.Properties.Resou
 D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.csproj.GenerateResource.cache
 D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.exe
 D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.pdb
+D:\Programming-Projects\The Snake\The Snake\obj\Debug\The_Snake.Scoreboard.resources
