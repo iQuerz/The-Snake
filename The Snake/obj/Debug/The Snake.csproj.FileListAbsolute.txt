@@ -19,3 +19,4 @@ D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.csproj.GenerateR
 D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.exe
 D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.pdb
 D:\Programming-Projects\The Snake\The Snake\obj\Debug\The_Snake.Scoreboard.resources
+D:\Programming-Projects\The Snake\The Snake\obj\Debug\The Snake.csproj.CoreCompileInputs.cache

@@ -54,47 +54,34 @@ namespace The_Snake
                 NEDIRAIPOSLEDNJU = !NEDIRAIPOSLEDNJU;
             if (direction == "E")
             {
-
                 for (int i = snek.Count - 2; i > 0; i--)
-                {
                     snek[i] = new Point(snek[i - 1].X, snek[i - 1].Y);
-                }
-
                 snek[0] = new Point(snek[0].X + size/multiplier, snek[0].Y);
             }
             else if (direction == "W")
             {
-
                 for (int i = snek.Count - 2; i > 0; i--)
-                {
                     snek[i] = new Point(snek[i - 1].X, snek[i - 1].Y);
-                }
                 snek[0] = new Point(snek[0].X - size/multiplier, snek[0].Y);
             }
             else if (direction == "N")
             {
-
                 for (int i = snek.Count - 2; i > 0; i--)
-                {
                     snek[i] = new Point(snek[i - 1].X, snek[i - 1].Y);
-                }
                 snek[0] = new Point(snek[0].X, snek[0].Y - size/multiplier);
             }
             else
             {
-
                 for (int i = snek.Count - 2; i > 0; i--)
-                {
                     snek[i] = new Point(snek[i - 1].X, snek[i - 1].Y);
-                }
                 snek[0] = new Point(snek[0].X, snek[0].Y + size/multiplier);
             }
 
             if (snek[0].X == 10)
-                snek[0] = new Point(1000-size, snek[0].Y);
+                snek[0] = new Point(1000-size/2, snek[0].Y);
 
             if (snek[0].Y == 10)
-                snek[0] = new Point(snek[0].X, 560-size);
+                snek[0] = new Point(snek[0].X, 560-size/2);
 
             if (snek[0].Y == 560)
                 snek[0] = new Point(snek[0].X, size);
@@ -119,7 +106,7 @@ namespace The_Snake
             while (!pass)
             {
                 Random r = new Random();
-                fruit = new Point(r.Next(multiplier, 50) * 20 / multiplier, r.Next(multiplier, 28 / multiplier) * (20 / multiplier));
+                fruit = new Point(r.Next(2, 49) * 20, r.Next(2,27) * 20);
                 bool pass2 = true;
                 foreach(Point p in snek)
                 {
